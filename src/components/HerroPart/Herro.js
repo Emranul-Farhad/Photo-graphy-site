@@ -1,9 +1,18 @@
 import React from 'react';
+import Nav from '../Navbar/Nav';
+import './Herro.css'
 
 const Herro = () => {
     return (
         <div>
-            <p>okay added</p>
+            <div className='herrobg'>
+                <Nav></Nav>
+
+                
+            </div>
+            <div>
+
+            </div>
         </div>
     );
 };

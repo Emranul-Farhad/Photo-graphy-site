@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Navbar/Nav';
+import Herro from './components/HerroPart/Herro';
 
 
 
@@ -9,7 +10,7 @@ import Nav from './components/Navbar/Nav';
 function App() {
   return (
     <div className="App">
-    <Nav></Nav>
+    <Herro></Herro>
     </div>
   );
 }

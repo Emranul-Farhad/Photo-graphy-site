@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../Images/page-2.png'
+import logo from '../../Images/page4.png'
 import './Nav.css'
 
 const Nav = () => {
@@ -11,11 +11,10 @@ const Nav = () => {
                     <img className='img-fluid' src={logo} alt="" />
                 </div>
                 <div className='Navbar'>
-                    <NavLink to='/' >Home</NavLink>
-                    <NavLink to='/blogs' >Blogs</NavLink>
-                    <NavLink to='/about-me' >About Me</NavLink>
-                    <NavLink to='/login' >Login </NavLink>
-                    <NavLink to='/login' >signup</NavLink>
+                    <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/' >Home</NavLink>
+                    <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/blogs' >Blogs</NavLink>
+                    <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/about-me'>About Me</NavLink>
+                    <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/login' >Login </NavLink>
                 </div>
             </div>
         </div>
