@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import Nav from '../components/Navbar/Nav';
 import auth from '../FirebaseKey/Key';
 import toast from 'react-hot-toast';
+import Loading from '../components/Loading/Loading';
 
 
 
@@ -26,10 +27,11 @@ const Login = () => {
 
      const [Email , setEmaiL] = useState("")
      const [PassworD , setPasswords] = useState("")
+
     const [
         signInWithEmailAndPassword,
         users,
-        loadings,
+        loadingLogin,
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
@@ -51,17 +53,21 @@ const Login = () => {
         setConpass(event.target.value)
     }
 
-//     const location = useLocation()
-//   let from = location.state?.from?.pathname || "/";
+    const location = useLocation()
+  let from = location.state?.from?.pathname || "/";
 
 
+  if (user || users) {
+    toast('successfully done!', {id : "signup"}  , {
+        icon: '👏', 
+      });
+    navigate(from, { replace: true })
+  }
 
-//   if (user) {
-//     toast('successfully done!', {id : "signup"}  , {
-//         icon: '👏', 
-//       });
-//     navigate(from, { replace: true })
-//   }
+
+  if(loading || loadingLogin || sending){
+    return <Loading></Loading>
+ }
 
     const signuphandel = event => {
         if(password.length < 5){
@@ -128,8 +134,7 @@ const Login = () => {
 
             <div className='d-flex justify-content-center loginMain'>
 
-         {
-             loading ? <p>loading</p> : 
+         
          
                 <div className="main">
                     <input type="checkbox" id="chk" aria-hidden="true" />
@@ -161,7 +166,7 @@ const Login = () => {
                     </div>
                 </div>
 
-         }
+         
             </div>
 
         </div>

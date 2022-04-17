@@ -7,7 +7,7 @@ import './ServiCart.css'
 
 
 const ServiCart = (props) => {
-     const {image, text , offer , price} = props.services
+     const {image, text , offer , price, id} = props.services
      const navigate = useNavigate()
 
     return (
@@ -27,7 +27,7 @@ const ServiCart = (props) => {
 
                         <button onClick={()=> navigate('/photos')}  className='pr-button' > <FontAwesomeIcon icon={faEye} ></FontAwesomeIcon> </button>
 
-                        <button onClick={()=> navigate('/Checkout') } className='pr-button' > <FontAwesomeIcon icon={faShoppingCart} ></FontAwesomeIcon> </button>
+                        <button onClick={()=> navigate(`/Checkout/${id}`) } className='pr-button' > <FontAwesomeIcon icon={faShoppingCart} ></FontAwesomeIcon> </button>
 
                         </div>
                     </div>

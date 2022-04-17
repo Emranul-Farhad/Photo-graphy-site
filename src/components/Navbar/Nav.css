@@ -1,5 +1,6 @@
 .Navbar{
     margin-top: 24px;
+    position: relative;
 }
 
 a{
@@ -31,4 +32,8 @@ a{
         display: none;
     }
     
+}
+
+.logoutbutton{
+    margin-left: 5px;
 }
