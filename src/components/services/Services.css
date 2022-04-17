@@ -22,3 +22,23 @@
     height: 6px;
     background-color: #194A60;
 }
+
+@media (min-width: 768px) and (max-width : 991px) {
+    .productsCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px ;
+        grid-row-gap: 20px;
+    }
+    
+}
+
+@media (min-width: 500px) and (max-width : 767px) {
+    .productsCards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 15px ;
+        grid-row-gap: 20px;
+    }
+    
+}

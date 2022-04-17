@@ -107,3 +107,12 @@
 .product-links a:hover {
     color: #fbb72c;
 }
+
+.pr-button{
+    color: white;
+    font-weight: 800;
+    border: none;
+    background: #1D527F;
+    margin-right: 17px;
+    
+}

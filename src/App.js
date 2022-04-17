@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Nav from './components/Navbar/Nav';
 import Herro from './components/HerroPart/Herro';
+import { Route, Routes } from 'react-router-dom';
+import Photo from './Photoshow/Photo';
 
 
 
@@ -10,7 +12,10 @@ import Herro from './components/HerroPart/Herro';
 function App() {
   return (
     <div className="App">
-    <Herro></Herro>
+    <Routes>
+      <Route path='/' element={<Herro></Herro>} ></Route>
+      <Route path='/photos' element={<Photo></Photo>} ></Route>
+    </Routes>
     </div>
   );
 }

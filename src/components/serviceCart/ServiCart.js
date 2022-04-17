@@ -1,11 +1,14 @@
+import { faEye, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import './ServiCart.css'
 
 
 
 const ServiCart = (props) => {
      const {image, text , offer , price} = props.services
-
+     const navigate = useNavigate()
 
     return (
         <div className='prodcucts'>
@@ -19,9 +22,13 @@ const ServiCart = (props) => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
                     <div className="product-bottom-details">
                         <div className="product-price"><small> {offer} </small> {price} </div>
+
                         <div className="product-links">
-                            {/* <a href="/"><i className="fa fa-heart"></i></a>
-                            <a href="/"><i className="fa fa-shopping-cart"></i></a> */}
+
+                        <button onClick={()=> navigate('/photos')}  className='pr-button' > <FontAwesomeIcon icon={faEye} ></FontAwesomeIcon> </button>
+
+                        <button  className='pr-button' > <FontAwesomeIcon icon={faShoppingCart} ></FontAwesomeIcon> </button>
+                        
                         </div>
                     </div>
                 </div>

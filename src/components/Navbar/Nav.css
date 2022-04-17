@@ -24,7 +24,11 @@ a{
 .active {
     color: darkblue;
     border-bottom: 2px solid #F2CB05;
-    
- 
+}
 
+@media (min-width: 500px) and (max-width : 767px) {
+    .navbarimg{
+        display: none;
+    }
+    
 }
