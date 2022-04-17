@@ -1,0 +1,49 @@
+[
+    {
+        "id" : 1,
+        "image" : "https://lh3.googleusercontent.com/0eiUtmakMDXdNDV_ghrbaboFmNBv4IKuzXim1qRuHFOawU27Wj333Gc8JSvClznDGcXyiKSX1j14JgM6xNExqvE7ipWwgzHzpRqruQ=w1200-h600-l90-rw-e30",
+        "text": "Baby Photography",
+        "price" : "$ 10,000",
+        "offer" : "$ 15,000"
+    },
+
+    {
+        "id" : 2,
+        "image": "https://images.pexels.com/photos/11745675/pexels-photo-11745675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "text": "commercial Photography",
+        "price" : "$ 20,000",
+        "offer" : "$ 25,000"
+    },
+
+    {
+        "id": 3,
+        "image":"https://images.unsplash.com/photo-1616745962516-803cbd9fe08c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "text" : "Weding anniversary ",
+        "price" : "$ 15,000",
+        "offer" : "$ 20,000"
+    },
+
+    {
+        "id": 4,
+        "image":"https://images.unsplash.com/photo-1548767797-d8c844163c4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+        "text" : "Pets Phtography",
+        "price" : "$ 9,000",
+        "offer" : "$ 11,000"
+    },
+
+    {
+        "id" : 5,
+        "image" : "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "text": "Products photograph",
+        "price" : "$ 25,000",
+        "offer" : "$ 30,000"
+    },
+
+    {
+        "id" : 6,
+        "image" : "https://lh3.googleusercontent.com/w2c1csk8CDJdCmUCsW-D91LYkf8yyXRrE7Du-ONpj77W3uFgfpk0ylqPRc0xeILJAvtoAKMyoJs980ZBmgB22hHsdY3qIbEKCg2XKg=w330-h220-rw-e30",
+        "text" : "Marige Photography",
+        "price" : "$ 30,000",
+        "offer" : "$ 35,000"
+    }
+]

@@ -3,6 +3,7 @@ import Blink from '../../blinkanimation/blink';
 import Home from '../../blinkanimation/blink';
 import man from '../../Images/man2.png'
 import Nav from '../Navbar/Nav';
+import Services from '../services/Services';
 import './Herro.css'
 
 const Herro = () => {
@@ -20,7 +21,7 @@ const Herro = () => {
                 </div>       
             </div>
             <div>
-
+                <Services></Services>
             </div>
         </div>
     );

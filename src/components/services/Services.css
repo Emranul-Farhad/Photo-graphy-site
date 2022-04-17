@@ -1,0 +1,24 @@
+.productsCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px ;
+    grid-row-gap: 20px;
+}
+
+.divider{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftone{
+    width: 108px;
+    height: 6px;
+    background-color: #F2CB05;
+}
+
+.rightone{
+    width: 108px;
+    height: 6px;
+    background-color: #194A60;
+}
