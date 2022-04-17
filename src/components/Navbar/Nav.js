@@ -12,9 +12,10 @@ const Nav = () => {
                 </div>
                 <div className='Navbar'>
                     <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/' >Home</NavLink>
-                    <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/blogs' >Blogs</NavLink>
+                    <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/services'>services</NavLink>
                     <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/about-me'>About Me</NavLink>
-                    <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/login' >Login </NavLink>
+                    <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/blogs' >Blogs</NavLink>
+                    <NavLink    className={({ isActive }) => (isActive ? "active" : "nav-list")} to='/login-signup' >Login </NavLink>
                 </div>
             </div>
         </div>

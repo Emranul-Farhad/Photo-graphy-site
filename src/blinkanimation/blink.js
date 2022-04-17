@@ -5,7 +5,7 @@ const words = ["Photography for me is not looking, it’s feeling. If you can’
 
 
 export default function Blink () {
-    
+  
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [blink, setBlink] = useState(true);
