@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { Servicestate } from '../../App';
 import ServiCart from '../serviceCart/ServiCart';
 import './Services.css'
 
@@ -7,7 +8,7 @@ import './Services.css'
 
 const Services = () => {
 
-const [service , setService] = useState([ ])
+const [service , setService] = useContext(Servicestate)
 
 useEffect(()=> {
     fetch("data.json")

@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useSendPasswordResetEmail, useSignIn
 import { useLocation, useNavigate } from 'react-router-dom';
 import Nav from '../components/Navbar/Nav';
 import auth from '../FirebaseKey/Key';
+import toast from 'react-hot-toast';
 
 
 
@@ -111,11 +112,11 @@ const Login = () => {
 
     
     const forgetPassword = async () =>{
-        // if(Email === ''){
-        //    return toast.error('input your email' , {id : 'resetEmailinput'})
-        // }
+        if(Email === ''){
+           return toast.error('input your email' , {id : 'resetEmailinput'})
+        }
         await sendPasswordResetEmail(Email);
-        // toast.success('Email send')
+        toast.success('Email send')
     }
     
 
@@ -139,8 +140,9 @@ const Login = () => {
                             <input onBlur={getemail} type="email" name="email" placeholder="Email" required />
                             <input onBlur={getpass} type="password" name="pswd" placeholder="Password" required />
                             <input onBlur={confirmpass} type="password" name="txt" placeholder="Confirm Password" required />                         
-                            <p style={{ color: 'red' }} > {errors} </p>
+                            <p className='ms-5' style={{ color: 'red' }} > {errors} </p>
                             <button className='loginButton' >Sign up</button>
+                            <button className='loginButton' >Sign Up with Google</button>
                         </form>
                     </div>
 

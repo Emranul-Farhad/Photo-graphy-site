@@ -27,7 +27,7 @@ const ServiCart = (props) => {
 
                         <button onClick={()=> navigate('/photos')}  className='pr-button' > <FontAwesomeIcon icon={faEye} ></FontAwesomeIcon> </button>
 
-                        <button  className='pr-button' > <FontAwesomeIcon icon={faShoppingCart} ></FontAwesomeIcon> </button>
+                        <button onClick={()=> navigate('/Checkout') } className='pr-button' > <FontAwesomeIcon icon={faShoppingCart} ></FontAwesomeIcon> </button>
 
                         </div>
                     </div>
