@@ -6,6 +6,7 @@ import Nav from '../components/Navbar/Nav';
 import auth from '../FirebaseKey/Key';
 import toast from 'react-hot-toast';
 import Loading from '../components/Loading/Loading';
+import { async } from '@firebase/util';
 
 
 
@@ -35,7 +36,7 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
-      const [sendPasswordResetEmail, sending, reseterror] = useSendPasswordResetEmail(
+      const [sendPasswordResetEmail, sending, reseterror ] = useSendPasswordResetEmail(
         auth
       );
 
@@ -71,11 +72,12 @@ const Login = () => {
 
     const signuphandel = event => {
         if(password.length < 5){
-            return alert("hba na")
+            return alert("too short")
         }
         event.preventDefault()
         if (password !== conpass) {
-           return setError("password don't matched ")
+        //    return setError("password don't matched ")
+        return toast.error(" password don't matched " , {id : 'password input'})
             
         }
         createUserWithEmailAndPassword(email, password)
@@ -96,14 +98,6 @@ const Login = () => {
         setPasswords(event.target.value)
     }
 
-    // const locationLog = useLocation()
-    // let fromL = locationLog.state?.from?.pathname || "/";
-  
-
-    // if (users) {
-    //     toast.success('Successfully login done', {id : "login"} )
-    //   navigate(fromL, { replace: true })
-    // }
 
     
     const handelLogin = (event) => {
@@ -116,16 +110,28 @@ const Login = () => {
         }
     }
 
-    
-    const forgetPassword = async () =>{
-        if(Email === ''){
-           return toast.error('input your email' , {id : 'resetEmailinput'})
+    // if(reseterror){
+    //     console.log('resterror');
+    //     return setError(reseterror.message)
+    //  }
+
+    const forgetPassword = async () => {
+        if( Email === ''){
+          return toast.error('input your mqail')
         }
+
+        if(reseterror){
+                console.log('resterror');
+                return setError(reseterror.message)
+              }
+
+        else{
         await sendPasswordResetEmail(Email);
+        setError(' ')
         toast.success('Email send')
+        }
     }
     
-
 
 
     return (
@@ -156,7 +162,10 @@ const Login = () => {
                             <label for="chk" aria-hidden="true">Login</label>
                             <input onBlur={EmailLogin} type="email" name="email" placeholder="Email" required />
                             <input onBlur={PassLogin}  type="password" name="pswd" placeholder="Password" required />  
-                           <div className='forget'> <p onClick={ forgetPassword} >forget passwords</p> </div>
+                           <div className='forget'> <p onClick={forgetPassword} >forget passwords</p> </div>
+                           {/* {
+                               reseterror && <p> {reseterror.message} </p>
+                           } */}
                             <p style={{ color: 'red' }} > {errors} </p>
                             {
                                 error && <p>  {error.message} </p> 
