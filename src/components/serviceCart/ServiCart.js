@@ -7,7 +7,7 @@ import './ServiCart.css'
 
 
 const ServiCart = (props) => {
-     const {image, text , offer , price, id} = props.services
+     const {image, text , offer , price, id , des} = props.services
      const navigate = useNavigate()
 
     return (
@@ -19,7 +19,7 @@ const ServiCart = (props) => {
                 </div>
                 <div className="product-details">
                     <span className="product-catagory"> {text} </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
+                    <p> {des} </p>
                     <div className="product-bottom-details">
                         <div className="product-price"><small> {offer} </small> {price} </div>
 

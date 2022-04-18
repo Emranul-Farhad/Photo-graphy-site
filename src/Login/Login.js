@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Login.css'
-import { useCreateUserWithEmailAndPassword, useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword,  useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Nav from '../components/Navbar/Nav';
 import auth from '../FirebaseKey/Key';
@@ -24,7 +24,7 @@ const Login = () => {
         createUserWithEmailAndPassword,
         user,
         loading,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification :true});
 
      const [Email , setEmaiL] = useState("")
      const [PassworD , setPasswords] = useState("")
@@ -110,10 +110,7 @@ const Login = () => {
         }
     }
 
-    // if(reseterror){
-    //     console.log('resterror');
-    //     return setError(reseterror.message)
-    //  }
+    
 
     const forgetPassword = async () => {
         if( Email === ''){

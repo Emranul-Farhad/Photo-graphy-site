@@ -10,6 +10,8 @@ import { Toaster } from 'react-hot-toast';
 import Chekout from './components/Chekout/Chekout';
 import { createContext, useState } from 'react';
 import Requiew from './components/Require/Requiew';
+import Blog from './components/Blogs/Blog';
+import About from './components/Aboutme/About';
 
 
 
@@ -34,7 +36,8 @@ function App() {
         <Route path='/services' element={<MyService></MyService>} ></Route>
         <Route path='/login-signup' element={<Login></Login>} ></Route>
         <Route path='/Checkout/:ids' element={<Requiew> <Chekout></Chekout> </Requiew> } ></Route>
-  
+        <Route path='/blogs' element={<Blog></Blog>} ></Route>
+        <Route path='//about-me' element={<About></About>} ></Route>
       </Routes>
       </Servicestate.Provider>
     </div>
