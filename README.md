@@ -4,11 +4,11 @@ Photo graphy live site link  [photographer](https://photo-grapier.web.app/).
 
 ## Available Scripts
 
-*This projects i will use React js framework
-*Bootstrap 5
-*css 3
+*T his projects i will use React js framework
+* Bootstrap 5
+* css 3
 * React Mui
-*React spinner
-*React Fontawwsome
+* React spinner
+* React Fontawwsome
 * Font awesome
-*fake data create by own
+* fake data create by own
