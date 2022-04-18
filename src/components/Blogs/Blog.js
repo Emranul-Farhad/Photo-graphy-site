@@ -6,7 +6,7 @@ const Blog = () => {
     return (
         <div>
             <Nav></Nav>
-           <div>
+           <div className='mt-5'>
                <div className="accordion" id="accordionExample">
   <div className="accordion-item">
     <h2 className="accordion-header" id="headingOne">

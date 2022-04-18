@@ -12,6 +12,8 @@ import { createContext, useState } from 'react';
 import Requiew from './components/Require/Requiew';
 import Blog from './components/Blogs/Blog';
 import About from './components/Aboutme/About';
+import Footer from './components/Footer/Footer';
+import Found from './components/Notfound/Found';
 
 
 
@@ -30,7 +32,6 @@ function App() {
       />
       <Servicestate.Provider value={[service , setService]}> 
       <Routes>
-
         <Route path='/' element={<Herro></Herro>} ></Route>
         <Route path='/photos' element={<Photo></Photo>} ></Route>
         <Route path='/services' element={<MyService></MyService>} ></Route>
@@ -38,7 +39,9 @@ function App() {
         <Route path='/Checkout/:ids' element={<Requiew> <Chekout></Chekout> </Requiew> } ></Route>
         <Route path='/blogs' element={<Blog></Blog>} ></Route>
         <Route path='//about-me' element={<About></About>} ></Route>
+        <Route path='*' element={<Found></Found>} ></Route>
       </Routes>
+       <Footer></Footer>
       </Servicestate.Provider>
     </div>
   );

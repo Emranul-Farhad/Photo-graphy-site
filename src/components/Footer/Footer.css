@@ -1,0 +1,27 @@
+ 
+  .fa-stack fa-lg {
+    display: inline-block;
+  }
+  
+  .footer-container > p {
+    color: white;
+  }
+  
+  .content-footer {
+    padding: 2rem 0;
+    margin-top: 3rem;
+    background: #2b3840;
+  }
+  
+.link{
+    color: white;
+    font-size: 36px;
+}
+
+.link:hover{
+    color: #F2CB05;
+}
+
+.fotter{
+    margin-top: 13rem;
+}

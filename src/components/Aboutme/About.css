@@ -1,9 +1,3 @@
-
-/* body {
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  } */
   
   .masthead-heading,
   .masthead-intro,
@@ -11,39 +5,47 @@
     text-align: center;
   }
   
-  .masthead {
+  /* .masthead {
+    margin-top: 70px;
     padding: 11em 0;
-    background-image: url('https://images.unsplash.com/photo-1512716679859-da19b4af9c38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+    background-image: url('../../Images/man2.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    border-top: solid 2em #B69760;
-  }
+    background-size: auto;
+    border-top: solid 5px #1D527F ;
+  } */
   
+
+  .masthead {
+      background-image: url(../../Images/man2.png);
+      min-height: 768px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: 78%;
+      margin-left: 14rem;
+    
+  }
+
   .masthead-intro {
     /* Text Declarations */
     margin-bottom: 0.1em;
     font-family: "Gentium Book Basic," Georgia, serif;
     font-size: 4em;
-    color: #FFFFFF;
+    color: black;
     text-transform: uppercase;
     letter-spacing: .08em;
   }
   
   
   .masthead-heading {
-    /*Layout Declarations */
     margin-top: -0.2em;
-    /* Typography Declarations */
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: light;
     font-size: 1.5em;
     letter-spacing: -0.01em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: black;
   }
   
-  /* Text Declarations for Sections */
   
   .introduction-section > p,
   .location-section > p,
@@ -53,7 +55,7 @@
     letter-spacing: 0.05em;
   }
   
-  /* Section Styling */
+ 
   
   .introduction-section,
   .location-section,
@@ -65,49 +67,18 @@
   }
   
   .questions-section > h2 {
-    /*Typography Declarations */
     font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 1.1 em;
     font-weight: bold;
     color: #222222;
   }
   
-  /* Footer Styling */
   
-  .fa-stack fa-lg {
-    display: inline-block;
-  }
-  
-  .footer-container > p {
-    color: white;
-  }
-  
-  .content-footer {
-    padding: 2em 0;
-    margin-top: 3em;
-    background: #2b3840;
-  }
-  
-  a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:link {
-    color: #B69760;
-  }
-  
-  a:visited {
-    color: #B69760;
-  }
-  
-  a:hover {
-    color: #B69760;
-  }
+
   
   @media only screen and (max-width: 571px) {
       .masthead {
-          padding: 5em 0;
+          display: none;
       }
       .masthead-intro {
           font-size: 3em;
@@ -122,5 +93,4 @@
           padding: 0 3em;
     }
   }
-  
-  
+ 

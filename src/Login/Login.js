@@ -150,7 +150,6 @@ const Login = () => {
                             <input onBlur={confirmpass} type="password" name="txt" placeholder="Confirm Password" required />                         
                             <p className='ms-5' style={{ color: 'red' }} > {errors} </p>
                             <button className='loginButton' >Sign up</button>
-                            <button className='loginButton' >Sign Up with Google</button>
                         </form>
                     </div>
 
