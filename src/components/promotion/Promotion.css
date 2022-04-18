@@ -1,0 +1,28 @@
+.offerrbanner{
+ background-image: url("https://img.freepik.com/free-photo/empty-photographer-studio-background-abstract-background-texture-beauty-dark-light-clear-blue-cold-gray-snowy-white-gradient-flat-wall-floor_1258-88209.jpg?t=st=1650281990~exp=1650282590~hmac=b4daf115ce9b7e4f40261f870852de309606bfeb829c428b201231d41298bc34&w=826");
+ background-size: auto 100%;
+ min-height: 300px;
+}
+
+.promotiomTExt{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    font-size: 27px;
+    margin-top: 3rem;
+    line-height: 42px;
+}
+
+.qutes{
+    color: yellow;
+}
+
+@media (min-width : 500px) and (max-width:768px){
+    .offerrbanner img{
+        display: none;
+    }
+}
+
+.qutesheader{
+    margin-top: 13rem;
+}

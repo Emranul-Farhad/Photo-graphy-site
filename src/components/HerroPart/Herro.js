@@ -3,6 +3,7 @@ import Blink from '../../blinkanimation/blink';
 import Home from '../../blinkanimation/blink';
 import man from '../../Images/man2.png'
 import Nav from '../Navbar/Nav';
+import Promotion from '../promotion/Promotion ';
 import Services from '../services/Services';
 import './Herro.css'
 
@@ -20,9 +21,13 @@ const Herro = () => {
                     </div>
                 </div>       
             </div>
+
             <div>
                 <Services></Services>
             </div>
+            <div className='mt-5 qutesheader'>
+               <Promotion></Promotion>
+           </div>
         </div>
     );
 };
